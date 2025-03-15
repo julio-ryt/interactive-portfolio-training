@@ -1,0 +1,34 @@
+@use './_variables' as *;
+
+@mixin pastel-style {
+  border: 2px solid $pastel-purple;
+  background-color: $pastel-purple;
+  color: #000;
+  margin-top: 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    background-color: $pastel-blue;
+    box-shadow: 0 0 10px $pastel-blue;
+  }
+}
+
+@mixin pastel-btn {
+  @include pastel-style;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 30px;
+  width: 100%;
+}
+
+@mixin pastel-anchor {
+  @include pastel-style;
+  text-decoration: none;
+  display: inline-block;
+  width: fit-content;
+  padding: 15px 30px;
+}

@@ -4,12 +4,15 @@
     "name": "Julio Merlo"
   },
   "scripts": {
-    "sass": "gulp watch"
+    "scss:watch": "gulp"
   },
   "devDependencies": {
+    "cssnano": "^7.0.6",
     "gulp": "^5.0.0",
     "gulp-cli": "^3.0.0",
+    "gulp-postcss": "^10.0.0",
     "gulp-sass": "^6.0.1",
-    "sass": "^1.85.1"
+    "sass": "^1.85.1",
+    "scss-reset": "^1.4.6"
   }
 }

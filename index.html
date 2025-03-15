@@ -25,15 +25,190 @@
     <meta property="og:site_name" content="JulioBio" />
     <!-- SEO -->
     <title>Interactive Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body>
+  <body class="container">
     <header>
-      <h1>Hi, I'm Julio Merlo</h1>
-      <p>
-        +7 years of experience. Software Engineer of Guanacaste, Costa Rica 🇨🇷.
-        Specialized in the development of unique web and mobile applications.
-      </p>
+      <section class="intro">
+        <h1>
+          <strong>Hi, I'am</strong> Julio Merlo
+          <strong> Software Engineer</strong>
+        </h1>
+        <a href="#" role="link">Contact</a>
+      </section>
+      <section class="avatar">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#c4d9ff"
+            d="M36.9,-62.1C48.5,-57.2,59.1,-48.7,67.1,-37.8C75.2,-26.8,80.7,-13.4,82.2,0.9C83.7,15.1,81.1,30.2,73.5,42C65.9,53.8,53.4,62.2,40.3,65.2C27.2,68.3,13.6,65.9,-0.1,66C-13.7,66.1,-27.4,68.7,-40.4,65.6C-53.3,62.4,-65.5,53.6,-72.3,41.8C-79.2,29.9,-80.7,14.9,-75.7,2.9C-70.6,-9.1,-58.9,-18.2,-50.3,-26.9C-41.6,-35.6,-35.9,-44,-28,-51.1C-20.2,-58.1,-10.1,-63.9,1.3,-66.1C12.6,-68.3,25.3,-67,36.9,-62.1Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+        <figure>
+          <img
+            loading="lazy"
+            src="https://www.acronimax.dev/profile.webp"
+            alt="Julio Avatar"
+          />
+        </figure>
+      </section>
+      <section class="projects"></section>
     </header>
-    <main></main>
+    <main>
+      <section class="projects">
+        <h2>Projects</h2>
+        <article>
+          <figure>
+            <img
+              loading="lazy"
+              src="https://www.acronimax.dev/_astro/mymetapp.Bno20gNW_Z1dG0AU.webp"
+              alt="My MetApp"
+            />
+          </figure>
+          <h3>My MetApp</h3>
+          <p>
+            The metabolism app! We will transform your relationship with food,
+            optimize your metabolism, and say goodbye to restrictive diets. You
+            will embrace a healthier, more balanced lifestyle with My MetApp.
+          </p>
+          <a
+            href="https://appadvice.com/app/my-metapp/6479656406"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="link"
+            >View Project</a
+          >
+        </article>
+        <article>
+          <figure>
+            <img
+              loading="lazy"
+              src="https://www.acronimax.dev/_astro/mymetapp.Bno20gNW_Z1dG0AU.webp"
+              alt="My MetApp"
+            />
+          </figure>
+          <h3>My MetApp</h3>
+          <p>
+            The metabolism app! We will transform your relationship with food,
+            optimize your metabolism, and say goodbye to restrictive diets. You
+            will embrace a healthier, more balanced lifestyle with My MetApp.
+          </p>
+          <a
+            href="https://appadvice.com/app/my-metapp/6479656406"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="link"
+            >View Project</a
+          >
+        </article>
+        <article>
+          <figure>
+            <img
+              loading="lazy"
+              src="https://www.acronimax.dev/_astro/mymetapp.Bno20gNW_Z1dG0AU.webp"
+              alt="My MetApp"
+            />
+          </figure>
+          <h3>My MetApp</h3>
+          <p>
+            The metabolism app! We will transform your relationship with food,
+            optimize your metabolism, and say goodbye to restrictive diets. You
+            will embrace a healthier, more balanced lifestyle with My MetApp.
+          </p>
+          <a
+            href="https://appadvice.com/app/my-metapp/6479656406"
+            target="_blank"
+            rel="noopener noreferrer"
+            role="link"
+            >View Project</a
+          >
+        </article>
+      </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+          <h3>Frontend</h3>
+          <span style="width: 90%"><span class="progress"></span></span>
+        </div>
+        <div class="skill">
+          <h3>Backend</h3>
+          <span style="width: 75%"><span class="progress"></span></span>
+        </div>
+        <div class="skill">
+          <h3>Mobile</h3>
+          <span style="width: 95%"><span class="progress"></span></span>
+        </div>
+        <div class="skill">
+          <h3>DevOps</h3>
+          <span style="width: 60%"><span class="progress"></span></span>
+        </div>
+        <div class="skill">
+          <h3>UI/UX</h3>
+          <span style="width: 85%"><span class="progress"></span></span>
+        </div>
+        <div class="skill">
+          <h3>Cloud</h3>
+          <span style="width: 65%"><span class="progress"></span></span>
+        </div>
+      </section>
+      <section class="contact">
+        <h2>Contact</h2>
+        <form>
+          <div class="form-control">
+            <label for="name"
+              ><i
+                class="fa-solid fa-user"
+                title="icon user"
+                aria-hidden="true"
+              ></i>
+              Name</label
+            >
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-control">
+            <label for="email"
+              ><i
+                class="fa-solid fa-envelope"
+                title="icon email"
+                aria-hidden="true"
+              ></i
+              >Email</label
+            >
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-control">
+            <label for="message"
+              ><i
+                class="fa-solid fa-comment"
+                title="icon comment"
+                aria-hidden="true"
+              ></i>
+              Message</label
+            >
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit">
+            <i
+              class="fa-solid fa-paper-plane"
+              aria-hidden="true"
+              title="icon send"
+            ></i
+            >Send
+          </button>
+        </form>
+      </section>
+    </main>
+    <script
+      defer
+      src="https://kit.fontawesome.com/8df9994193.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

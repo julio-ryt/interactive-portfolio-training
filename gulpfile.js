@@ -1,15 +1,19 @@
-"use strict";
+'use strict'
 
-const gulp = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
+const { src, dest, watch } = require('gulp')
+const postcss = require('gulp-postcss')
+const cssnano = require('cssnano')
+const sass = require('gulp-sass')(require('sass'))
 
-function buildStyles() {
-  return gulp
-    .src("./sass/**/*.scss")
-    .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest("./css"));
+function scssTask() {
+  return src('./sass/**/*.scss', { sourcemaps: true })
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([cssnano()]))
+    .pipe(dest('./css', { sourcemaps: '.' }))
 }
-exports.buildStyles = buildStyles;
-exports.watch = function () {
-  gulp.watch("./sass/**/*.scss", buildStyles);
-};
+
+function watchTask() {
+  watch('./sass/**/*.scss', scssTask)
+}
+
+exports.default = watchTask
